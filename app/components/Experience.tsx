@@ -43,9 +43,12 @@ export default function Experience(): React.JSX.Element {
   return (
     <m.section id="experience" className="py-20 px-6" initial={{ opacity: 0, y: 8 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.4 }}>
       <div className="container mx-auto max-w-6xl">
-        <h2 className="text-4xl lg:text-5xl font-bold text-white mb-12 text-center">
-          Work Experience
-        </h2>
+        <m.div className="text-center mb-16" initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 0.4, delay: 0.1 }}>
+          <m.h2 className="text-4xl lg:text-5xl font-bold text-white mb-6">Work Experience</m.h2>
+          <p className="text-lg text-white/80 max-w-4xl mx-auto">
+            Here are some of the projects and platforms I've worked on throughout my career. Each one has contributed to my growth as a developer.
+          </p>
+        </m.div>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           {experienceCards.map((card, index) => (
             <m.div
